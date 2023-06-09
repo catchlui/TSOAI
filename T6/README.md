@@ -127,7 +127,7 @@ Here we haven’t considered bias.
 
 Loss Curve comparison based on learning rate 
 =================================================
-![](img/Lloss-chart-for-dff-lrs.png)
+![](img/loss-chart-for-dff-lrs.png)
 
 
 All the above steps are used to train a Neural Network from scratch.Pytorch uses dynamic graph to store the gradients and that way it's much easier than solving through the analytical way we tried to solve 
