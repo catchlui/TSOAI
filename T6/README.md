@@ -120,7 +120,7 @@ Now let’s put all in tabular format, do simple mathematics
 We performed this training for multiple learning rates (0.1, 0.2, 0.5, 0.8, 1.0, 2.0) keeping the initial weights same. This shows the impact of learning rate over training 
 Each cell of the attached excel sheet shows the formula of back propagation which is 
 
-![](img/weights.png)
+![](img/formula_bp.png)
 
 
 Here we haven’t considered bias.
