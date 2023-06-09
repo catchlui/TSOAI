@@ -120,14 +120,14 @@ Now let’s put all in tabular format, do simple mathematics
 We performed this training for multiple learning rates (0.1, 0.2, 0.5, 0.8, 1.0, 2.0) keeping the initial weights same. This shows the impact of learning rate over training 
 Each cell of the attached excel sheet shows the formula of back propagation which is 
 
-![](images/weights.png)
+![](img/weights.png)
 
 
 Here we haven’t considered bias.
 
 Loss Curve comparison based on learning rate 
 =================================================
-![](images/formula_bp.png)
+![](img/Loss Curve on Different LR.png)
 
 
 All the above steps are used to train a Neural Network from scratch.Pytorch uses dynamic graph to store the gradients and that way it's much easier than solving through the analytical way we tried to solve 
