@@ -78,3 +78,23 @@ Analysis:
  There is no more over-fitting. Test Accuracy is always greater than training accuracy
 
 ## Final Model
+
+Target
+
+Improved Accuracy of the  accuracy and take it beyond 99.40 percent in last few epochs
+ Let’s change the LR using scheduler
+ After 6th epoch we are reducing by factor of gamma
+Number of Parameters 6422
+
+Best Training Accuracy 99.50
+
+Best Test Accuracy 99.40
+
+Number of Epoch 15
+
+Model Name Net6
+
+Analysis : 
+The network is constantly hitting 99.40 with some amount of over-fitting..
+
+Submitting the model as it's meeting the objective
