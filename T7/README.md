@@ -15,6 +15,7 @@ This also includes training and test functions which takes care of the training 
  
 - `utility.py`: This file contains utility functions on the accuracy of the prediction`GetCorrectPredCount`and `display_model_summary` which are used displaying the model summary. You 
 - `SP_S7_v2_model2.ipynb`: This Jupyter Notebook contains the main code to run the application. It imports model architecture from `model.py` and use the utility functions from `utility.py` to train and test the model. It also displays the train and test loss through graph 
+- `TSOAI_assignment7.docx`: This document has the analysis and screen shots of each of the experiments
 
 ## Instructions
 
