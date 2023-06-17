@@ -32,4 +32,25 @@ To use this application, follow these steps:
 
 - Make sure your dataset is prepared and formatted correctly before running the application.
 - For more detailed information, refer to the code comments within each file.
-- 
+
+## Intial Set up
+Target:
+
+Create a skeleton model which trains with MNIST data
+Results:
+Number of Parameters 15408
+
+Best Training Accuracy 99.54
+
+Best Test Accuracy 98.62
+
+Number of Epoch 15
+
+Model Name Net2
+
+File Name SP- S7_skl_v1.ipynb
+
+Analysis:
+
+Model has more capacity to learn
+It’s over fitting model
