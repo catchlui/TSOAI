@@ -56,3 +56,25 @@ Analysis:
  It’s over fitting model
  
 ## Intermediate Model
+
+Target:
+
+ Improve the Accuracy of the model
+ We will try to do some image augmentation
+ Reduce Overfitting in the later stage
+Number of Parameters 6422
+
+Best Training Accuracy 99.13
+
+Best Test Accuracy 99.28
+
+Number of Epoch 15
+
+Model Name Net4
+
+Analysis:
+
+ Maintained the model size
+ There is no more over-fitting. Test Accuracy is always greater than training accuracy
+
+## Final Model
