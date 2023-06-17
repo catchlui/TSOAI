@@ -31,5 +31,5 @@ To use this application, follow these steps:
 ## Additional Notes
 
 - Make sure your dataset is prepared and formatted correctly before running the application.
-- Adjust the hyperparameters and model architecture in `model.py` and the training/testing procedures in `SP_S7_v2_model2.ipynb` as per your specific requirements.
 - For more detailed information, refer to the code comments within each file.
+- 
