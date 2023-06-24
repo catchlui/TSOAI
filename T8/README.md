@@ -35,7 +35,7 @@ To use this application, follow these steps:
 -    Added One cycle LR to change the learning rate and i found it to be very effective
 
   ### Wrongly Classified Predictation 
-     ![](img/wrongly_classified_BN.png)
+  ![](img/wrongly_classified_BN.png)
 
   ### Accuracy Graph
   ![](img/accuracy_graph_BN.png)
