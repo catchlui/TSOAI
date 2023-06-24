@@ -10,8 +10,8 @@ This application has the below architecture -
 ## Files
 
 - `model.py`: This file contains the architecture of the convolutional neural network model used for image classification. It defines the structure of the model and the forward propagation method.
-- `utils.py`: This file contains utility functions for training, testing, and calculating accuracy. 
 - `SP- S8_v3_BatchNorm.ipynb`: This Jupyter Notebook contains the main code to run the application for the batch normalizatoin . It demonstrates how to import the model architecture and training class from `model.py`
+- `SP- S8_v2_groupNorm.ipynb` : This jupyter Notebook contains the main code and graphs for Group Normalization
 
 ## Instructions
 
@@ -19,7 +19,7 @@ To use this application, follow these steps:
 
 1. Install the required dependencies (PyTorch ).
 2. Import the `model.py` file to access the model architecture,training, testing
-3. Run the code in `S5_SP.ipynb` to train and test the model on your dataset.
+3. Run the code in `SP- S8_v3_BatchNorm.ipynb` to train and test the model on your dataset with Batch Normalization Architecture
 
 ## Additional Notes
 
@@ -35,15 +35,24 @@ To use this application, follow these steps:
 -    Added One cycle LR to change the learning rate and i found it to be very effective
 
   ### Wrongly Classified Predictation 
-  ![](img/wrongly_classified_BN.png)
+     ![](img/wrongly_classified_BN.png)
 
   ### Accuracy Graph
   ![](img/accuracy_graph_BN.png)
 
   ### Loss Graph
-  ![](img/wrongly_classified_BN.png)
+  ![](img/BN_loss.png)
+
+  ### Advantages of Batch Normalization
+    - Improved training speed: BN normalizes the activations within each mini-batch, reducing the internal covariate shift problem and allowing for faster convergence during training.
+    - Increased stability and generalization: BN adds a regularization effect by reducing the dependence on specific weights and biases, making the model more robust and reducing overfitting.
+    - Allows for higher learning rates: BN helps stabilize the gradient flow in the network, allowing for the use of larger learning rates without causing the gradients to explode.
+
 
   ### 
    ## Group Normalization
 -   Name of the File
--   `
+-   `SP- S8_v2_groupNorm.ipynb`
+-   Name of the model architecture NetGroupNorm present in the `model.py`
+-    I was able to achieve more than 70% accuracy in 10 epoch with 47876 parameters
+-    In 10th Epoch training loss: 0.1968, acc 72.22% validation loss: 0.1859, validation acc 73.99% 
