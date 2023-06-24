@@ -33,7 +33,7 @@ To use this application, follow these steps:
 -    Without Batch Normalization the model was struggling to achieve same accuracy
 -    11th Epoch : training loss: 0.2039, acc 71.31%  validation loss: 0.1946, validation acc 72.91% 
 -    Added One cycle LR to change the learning rate and i found it to be very effective
-  
+  ![](img/wrongly_classified_BN.png)
    ## Group Normalization
 -   Name of the File
 -   `
