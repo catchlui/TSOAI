@@ -12,6 +12,7 @@ This application has the below architecture -
 - `model.py`: This file contains the architecture of the convolutional neural network model used for image classification. It defines the structure of the model and the forward propagation method.
 - `SP- S8_v3_BatchNorm.ipynb`: This Jupyter Notebook contains the main code to run the application for the batch normalizatoin . It demonstrates how to import the model architecture and training class from `model.py`
 - `SP- S8_v2_groupNorm.ipynb` : This jupyter Notebook contains the main code and graphs for Group Normalization
+- `SP- S8_v3_layerNorm.ipynb`: This jupyter Notebook contains the main code and graphs for Layer Normalization
 
 ## Instructions
 
@@ -55,4 +56,25 @@ To use this application, follow these steps:
 -   `SP- S8_v2_groupNorm.ipynb`
 -   Name of the model architecture NetGroupNorm present in the `model.py`
 -    I was able to achieve more than 70% accuracy in 10 epoch with 47876 parameters
--    In 10th Epoch training loss: 0.1968, acc 72.22% validation loss: 0.1859, validation acc 73.99% 
+-    In 10th Epoch training loss: 0.1968, acc 72.22% validation loss: 0.1859, validation acc 73.99%
+
+  ### Advantages of Group Normalization
+    Reduced batch size dependency: GN divides the channels into groups and normalizes the activations within each group, making it less sensitive to the batch size used during training.
+    Effective for small batch sizes: GN can perform well even with small batch sizes, making it suitable for scenarios where memory constraints limit the batch size.
+    Captures inter-channel correlations: GN considers the spatial dimensions of the input data and captures inter-channel correlations, making it suitable for CNNs.
+      
+   ### 
+   ## Layer Normalization
+    Name of the File
+-   `SP- S8_v3_layerNorm.ipynb`
+-   Name of the model architecture NetGroupNorm present in the `model.py`
+-    I was able to achieve more than 70% accuracy in 10 epoch with 47876 parameters
+-    In 20th Epoch training training loss: 0.1650, acc 76.80% validation loss: 0.1591, validation acc 77.93%
+-    Observation : When i added layer norm, the number of parameters gone extremely high
+-    Made elementwise_affine=False to decrease the number of parameters for layer norm function
+
+  ### Advantages of Layer Normalization
+      Invariant to batch size: LN normalizes the activations across each layer independently, making it suitable for scenarios with varying batch sizes or when batch statistics are unreliable.
+    Stable performance: LN performs consistently well across different batch sizes and training scenarios.
+    Suitable for recurrent neural networks (RNNs and LLMs): LN is particularly effective in RNNs due to its ability to handle variable-length sequences.
+   
