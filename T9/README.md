@@ -51,15 +51,15 @@ Overall, depth-wise separable convolution offers a trade-off between computation
 
  ### Image Augmentation
  Snapshot after applying augmentation
-  ![](img/patch.png)
-
-  ### Wrongly Classified Predictation 
-  ![](img/wrongly_classified_images.png)
-
-  ### Accuracy Graph
-  ![](img/accuracy_image.png)
+  ![](img/patch_image.png)
 
   ### Loss Graph
   ![](img/loss_image.png)
 
+  ### Accuracy Graph
+  ![](img/accuracy_image.png)
+
+  
+  ### Wrongly Classified Predictation 
+  ![](img/wrong_classified_images.png)
 
