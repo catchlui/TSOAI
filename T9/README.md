@@ -15,7 +15,10 @@ This application is designed for image classification using a convolutional neur
 
 # Results 
   - Achieved more than 85% accuracy with less than 200 K parameters(195508)
-  - Number of Epochs to achieve is less than 175  
+  - Number of Epochs to achieve is less than 175
+  - Applied depth-wise separable convolution
+  - Applied dialated convolution
+  - Applied GAP   
 
 ## Files
 
@@ -26,6 +29,25 @@ This application is designed for image classification using a convolutional neur
 
 
 ## Additional Notes
+
+### Dilated Convolution:
+It is a technique that expands the kernel (input) by inserting holes between its consecutive elements. In simpler terms, it is the same as convolution but it involves pixel skipping, so as to cover a larger area of the input.
+In summary dilated convolution is a powerful technique for increasing the receptive field and capturing multi-scale contextual information in convolutional neural networks. It provides a balance between the receptive field size and computational efficiency, making it suitable for various computer vision tasks where capturing global context is important
+
+### Depth-wise separable convolution:
+is a type of convolutional operation commonly used in deep learning architectures, especially in mobile and resource-constrained applications. It decomposes the standard convolutional operation into two separate layers: depth-wise convolution and point-wise convolution.
+
+  1. Depth-wise convolution: In this step, each input channel is convolved with its own set of filters independently. This means that each channel is processed individually without any interaction with other channels. Depth-wise convolution helps capture spatial information within each channel while keeping the computational cost relatively low.
+  
+  2. Point-wise convolution: In this step, a 1x1 convolution is applied to the output of the depth-wise convolution. This operation performs a linear combination of the channel-wise features, allowing cross-channel interactions and enabling the network to learn more complex representations.
+  
+  The main advantage of depth-wise separable convolution is its computational efficiency compared to standard convolutions. By decoupling the depth-wise and point-wise operations, the number of parameters and computations is significantly reduced. This reduction in parameters makes the model more lightweight and requires less memory and processing power, making it suitable for mobile and embedded devices.
+  
+  Additionally, depth-wise separable convolution can improve the model's performance by enhancing its ability to capture spatial information within each channel independently. This is particularly beneficial when dealing with small or limited datasets, as it reduces the risk of overfitting by reducing the model's capacity to memorize specific examples.
+  
+  However, depth-wise separable convolution may have limitations in scenarios where capturing complex interactions between channels is crucial. Since the depth-wise convolution operates independently on each channel, it may not be able to effectively capture cross-channel dependencies compared to standard convolutions.
+
+Overall, depth-wise separable convolution offers a trade-off between computational efficiency and representation power, making it a useful tool for optimizing convolutional neural network architectures in resource-constrained scenarios.
 
 
   ### Wrongly Classified Predictation 
