@@ -49,14 +49,17 @@ is a type of convolutional operation commonly used in deep learning architecture
 
 Overall, depth-wise separable convolution offers a trade-off between computational efficiency and representation power, making it a useful tool for optimizing convolutional neural network architectures in resource-constrained scenarios.
 
+ ### Image Augmentation
+ Snapshot after applying augmentation
+  ![](img/patch.png)
 
   ### Wrongly Classified Predictation 
-  ![](img/wrongly_classified_BN.png)
+  ![](img/wrongly_classified_images.png)
 
   ### Accuracy Graph
-  ![](img/accuracy_graph_BN.png)
+  ![](img/accuracy_image.png)
 
   ### Loss Graph
-  ![](img/BN_loss.png)
+  ![](img/loss_image.png)
 
 
