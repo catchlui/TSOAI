@@ -56,3 +56,19 @@ To use this application, follow these steps:
 - Adjust the hyperparameters and model architecture in `model.py` and the training/testing procedures `utils.py` and main code in `S5_Snehashis.ipynb` as per your specific requirements.
 - For more detailed information, refer to the code comments within each files.
 
+ ### Image Augmentation
+ Snapshot after applying augmentation
+
+ ![](img/augmented_images.png)
+
+ ### Steppest Gradient
+  ![](img/steepest_gradient.png)
+ ### LR Variation
+  ![](img/LR_variation.png)
+
+  ### Loss Graph
+  ![](img/loss.png)
+
+  ### Accuracy Graph
+  ![](img/accuracy_images.png)
+
