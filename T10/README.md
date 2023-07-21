@@ -70,5 +70,5 @@ To use this application, follow these steps:
   ![](img/loss.png)
 
   ### Accuracy Graph
-  ![](img/accuracy_images.png)
+  ![](img/accuracy.png)
 
