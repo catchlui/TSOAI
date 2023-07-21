@@ -54,8 +54,10 @@ To use this application, follow these steps:
 
 - Make sure your dataset is prepared and formatted correctly before running the application.
 - Adjust the hyperparameters and model architecture in `model.py` and the training/testing procedures `utils.py` and main code in `S5_Snehashis.ipynb` as per your specific requirements.
-- For more detailed information, refer to the code comments within each files.
-
+- For more  information, refer to the code comments within each files.
+## Observation
+- The model was able to achieve more than 90% accuracy by 22nd Epoch and remained constanly above 90 for last three epoch
+- I could see there is some amount of over-fitting. I could have used drop out to reduce it . But it was not asked in the question so did not use it
  ### Image Augmentation
  Snapshot after applying augmentation
 
